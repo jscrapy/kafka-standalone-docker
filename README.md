@@ -4,6 +4,6 @@ Single-node Apache Kafka with local Zookeeper.
 
 Run with:
 
-	docker run -d --name=kafka --net=host -e HOSTNAME=localhost parzonka/kafka-standalone
+	docker run -d -v/host/path/:/data/kafka-logs --name=kafka --net=host -e HOSTNAME=localhost xuchaoo/kafka-standalone-docker
 
 
