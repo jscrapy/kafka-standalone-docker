@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:8
+FROM anapsix/alpine-java:latest
 
 ADD ./*.sh /tmp/kafka/
 
