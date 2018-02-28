@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KAFKA=kafka_2.12-1.0.0
+export KAFKA=kafka_2.12-1.0.0
 
 wget http://mirror.bit.edu.cn/apache/kafka/1.0.0/${KAFKA}.tgz -O ${KAFKA}.tgz 
 tar xzf ${KAFKA}.tgz 
