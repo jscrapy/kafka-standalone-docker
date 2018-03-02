@@ -4,7 +4,7 @@ ADD ./*.sh /tmp/kafka/
 
 WORKDIR /tmp/kafka
 
-RUN sh install.sh
+RUN sh build.sh
 
 EXPOSE 2181 9092
 
