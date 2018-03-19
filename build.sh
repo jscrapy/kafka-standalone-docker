@@ -10,8 +10,8 @@ sed -i "s/tmp/data\/kafka/g"  ${KAFKA}/config/server.properties
 # keep logs in recent 1 hour
 sed -i "s/168/1/g"  ${KAFKA}/config/server.properties
 
-echo "delete.topic.enable=true" > ${KAFKA}/config/server.properties
-echo "auto.create.topics.enable=false" > ${KAFKA}/config/server.properties
+echo "delete.topic.enable=true" >> ${KAFKA}/config/server.properties
+echo "auto.create.topics.enable=false" >> ${KAFKA}/config/server.properties
 
 # modify kafka log4j dir
 sed -i "s/\$base_dir\/logs/\/data\/kafka\/logs/g"   ${KAFKA}/bin/kafka-run-class.sh
